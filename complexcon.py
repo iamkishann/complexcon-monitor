@@ -19,7 +19,7 @@ print ("##############################################################")
 def complexcon():
     headers = {
             'Host':'cms.complexcon.com',
-            'X-App-Authorization':'9LEZqRREX4qWzAcSZXqfqg',
+            'X-App-Authorization':'xxx', #use ur app app auth key
             'Accept':'*/*',
             'User-Agent':'Complex/699 CFNetwork/974.2.1 Darwin/18.0.0',
             'Accept-Language':'en-us',
