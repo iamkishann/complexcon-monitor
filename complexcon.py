@@ -5,8 +5,6 @@ from slackclient import SlackClient
 from time import gmtime, strftime
 from datetime import datetime
 import os
-from slackclient import SlackClient
-import multiprocessing as mp
 import json
 
 
@@ -63,7 +61,7 @@ def complexcon_refresh():
 
 def slackmessage(link):
     link = link
-    sc = SlackClient("xoxb-335709116818-6wgSQ7TYEcdSkqgL2Mvep63k") #API TOKEN HERE 
+    sc = SlackClient("xxxx") #API TOKEN HERE 
 
     sc.api_call(
     "chat.postMessage",
@@ -74,10 +72,8 @@ def slackmessage(link):
     )
 
 def main():
-        p1 = mp.Process(target = complexcon_refresh)
-
-        p1.start()
-        print(datetime.now().strftime('%T') + " started complexcon monitor ")
+    complexcon_refresh()
+    print(datetime.now().strftime('%T') + " started complexcon monitor ")
 
 
 main()
